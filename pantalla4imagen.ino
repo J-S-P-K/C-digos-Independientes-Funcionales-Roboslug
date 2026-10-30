@@ -2,17 +2,24 @@
 #include <stdint.h>
 
 // Archivos de imágenes del primer código
-#include "img1.h"
-#include "img2.h"
-#include "img3.h"
-#include "img4.h"
+#include "imagen1.h"
+#include "imagen2.h"
+#include "imagen3.h"
+#include "imagen4.h"
+
+/*
+Imagen 1 = Normal
+Imagen 2 = Muerto
+Imagen 3 = Golpeado
+Imagen 4 = Parpadeo
+*/
 
 // Configuración de pines del segundo código (funcional)
 #define PIN_SCLK 12  // SCL / SCK
 #define PIN_MOSI 11  // SDA / MOSI
 #define PIN_RST   8  // RST
 #define PIN_DC   17  // Conectado al pin 'CS' de la pantalla de 6 pines
-#define PIN_CS   10  // Chip Select dummy   
+#define PIN_CS   10  // Chip Select dummy
 
 DIYables_TFT_GC9A01_Round TFT_display(PIN_RST, PIN_DC, PIN_CS);
 
@@ -100,5 +107,3 @@ void loop() {
 const uint16_t image1[] PROGMEM = {
 	0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 
 */
-
-
